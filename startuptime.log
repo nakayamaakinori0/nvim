@@ -1,0 +1,111 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.009  000.009: --- NVIM STARTING ---
+000.105  000.096: event init
+000.271  000.166: early init
+001.698  001.427: locale set
+001.771  000.074: init first window
+002.790  001.018: inits 1
+002.830  000.040: window checked
+002.838  000.008: parsing arguments
+003.785  000.339  000.339: require('vim.shared')
+004.033  000.047  000.047: require('vim._meta')
+004.036  000.244  000.198: require('vim._editor')
+004.038  000.646  000.062: require('vim._init_packages')
+004.044  000.560: init lua interpreter
+007.418  003.374: expanding arguments
+007.458  000.040: inits 2
+007.871  000.414: init highlight
+007.873  000.002: waiting for UI
+008.110  000.237: done waiting for UI
+008.116  000.006: clear screen
+008.548  000.433: init default mappings & autocommands
+011.483  000.634  000.634: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/ftplugin.vim
+012.120  000.307  000.307: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/indent.vim
+014.316  001.186  001.186: require('options')
+016.931  000.572  000.572: require('packer.util')
+016.968  002.235  001.663: require('packer')
+021.864  004.893  004.893: require('packer.log')
+023.110  000.377  000.377: require('packer.async')
+023.785  000.263  000.263: require('packer.result')
+023.790  000.677  000.415: require('packer.jobs')
+023.797  001.838  000.784: require('packer.plugin_utils')
+024.305  000.491  000.491: require('packer.snapshot')
+027.071  012.752  003.295: require('plugins')
+029.772  000.372  000.372: require('tokyonight.treesitter')
+029.779  000.808  000.436: require('tokyonight.util')
+031.220  000.493  000.493: require('tokyonight.colors')
+031.224  001.442  000.949: require('tokyonight.theme')
+032.523  001.297  001.297: require('tokyonight.config')
+032.527  004.011  000.463: require('tokyonight')
+034.718  000.007  000.007: require('vim.F')
+034.762  002.015  002.008: require('vim.diagnostic')
+037.511  000.276  000.276: require('vim.treesitter.language')
+037.520  001.000  000.724: require('vim.treesitter.query')
+037.792  000.268  000.268: require('vim.treesitter._range')
+037.799  002.141  000.873: require('vim.treesitter.languagetree')
+037.807  003.025  000.884: require('vim.treesitter')
+038.323  000.513  000.513: require('vim.treesitter.highlighter')
+044.252  016.089  006.525: sourcing /Users/akinori.nakayama/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/colors/tokyonight.lua
+046.033  033.207  003.179: sourcing /Users/akinori.nakayama/.config/nvim/init.lua
+046.252  003.556: sourcing vimrc file(s)
+047.256  000.582  000.582: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/filetype.lua
+048.423  000.275  000.275: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/syntax/synload.vim
+048.843  001.281  001.007: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/syntax/syntax.vim
+051.846  000.345  000.345: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/gzip.vim
+052.309  000.163  000.163: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/health.vim
+056.008  000.596  000.596: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+056.328  003.719  003.124: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/matchit.vim
+056.984  000.401  000.401: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/matchparen.vim
+057.886  000.655  000.655: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/netrwPlugin.vim
+058.885  000.142  000.142: sourcing /Users/akinori.nakayama/.local/share/nvim/rplugin.vim
+058.901  000.712  000.570: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/rplugin.vim
+059.286  000.125  000.125: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/shada.vim
+059.673  000.055  000.055: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/spellfile.vim
+060.168  000.172  000.172: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/tarPlugin.vim
+060.664  000.167  000.167: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/tohtml.vim
+061.193  000.148  000.148: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/tutor.vim
+061.790  000.322  000.322: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/zipPlugin.vim
+062.986  000.164  000.164: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/editorconfig.lua
+063.484  000.220  000.220: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/man.lua
+064.001  000.187  000.187: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/plugin/nvim.lua
+064.039  008.368: loading rtp plugins
+064.997  000.957: loading packages
+066.317  001.320: loading after plugins
+066.334  000.018: inits 3
+071.429  005.095: reading ShaDa
+072.489  001.059: opening buffers
+072.513  000.024: BufEnter autocommands
+072.523  000.010: editing files in windows
+072.845  000.322: VimEnter autocommands
+072.849  000.003: UIEnter autocommands
+073.805  000.550  000.550: sourcing /usr/local/Cellar/neovim/0.9.0/share/nvim/runtime/autoload/provider/clipboard.vim
+073.818  000.419: before starting main loop
+074.450  000.633: first screen update
+074.452  000.002: --- NVIM STARTED ---
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.010  000.010: --- NVIM STARTING ---
+000.128  000.118: event init
+000.320  000.192: early init
+002.319  002.000: locale set
+002.385  000.066: init first window
+003.405  001.020: inits 1
+003.421  000.016: window checked
+003.428  000.007: parsing arguments
+004.421  000.394  000.394: require('vim.shared')
+004.557  000.047  000.047: require('vim._meta')
+004.560  000.133  000.086: require('vim._editor')
+004.562  000.591  000.065: require('vim._init_packages')
+004.568  000.548: init lua interpreter
+007.064  002.496: expanding arguments
+007.098  000.034: inits 2
+007.506  000.408: init highlight
