@@ -1,10 +1,8 @@
 -- ファイル
 vim.opt.fileencoding = "utf-8" -- エンコーディングをUTF-8に設定
-vim.opt.swapfile = false -- スワップファイルを作成しない
 vim.opt.helplang = "ja" -- ヘルプファイルの言語は日本語
-vim.opt.hidden = true -- バッファを切り替えるときに
-                      --ファイルを保存しなくてもOKに
-
+-- vim.opt.hidden = true -- バッファを切り替えるときに
+--                       --ファイルを保存しなくてもOKに
 -- カーソルと表示
 -- vim.opt.cursorline = true -- カーソルがある行を強調
 -- vim.opt.cursorcolumn = true -- カーソルがある列を強調
