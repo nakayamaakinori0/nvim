@@ -1,11 +1,11 @@
 -- ファイル
 vim.opt.fileencoding = "utf-8" -- エンコーディングをUTF-8に設定
 vim.opt.helplang = "ja" -- ヘルプファイルの言語は日本語
--- vim.opt.hidden = true -- バッファを切り替えるときに
---                       --ファイルを保存しなくてもOKに
+vim.opt.hidden = true -- バッファを切り替えるときに
+                       --ファイルを保存しなくてもOKに
 -- カーソルと表示
--- vim.opt.cursorline = true -- カーソルがある行を強調
--- vim.opt.cursorcolumn = true -- カーソルがある列を強調
+vim.opt.cursorline = true -- カーソルがある行を強調
+vim.opt.cursorcolumn = true -- カーソルがある列を強調
 
 -- クリップボード共有
 vim.opt.clipboard:append({ "unnamedplus" }) -- レジスタとクリップボードを共有
