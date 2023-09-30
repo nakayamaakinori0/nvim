@@ -1,11 +1,10 @@
 print("helloWorld")
 require("plugins")
-
 require("autocmds")
 require("options")
 require("keymaps")
 
-vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme tokyonight-night]]
 
 require("lualine").setup()
 require("tabline").setup()
@@ -36,3 +35,6 @@ require("noice").setup({
     lsp_doc_border = false, -- add a border to hover docs and signature help
   },
 })
+require('im_select').setup {
+  default_im_select = 'com.apple.keylayout.ABC'
+}
