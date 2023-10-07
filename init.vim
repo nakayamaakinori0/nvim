@@ -61,15 +61,20 @@ if dein#load_state('~/.cache/dein')
   " プラグインを追加します
   call dein#add('scrooloose/nerdtree')    " ファイルエクスプローラプラグイン
   call dein#add('cocopon/iceberg.vim') " カラースキームプラグイン
-  call dein#add('ctrlpvim/ctrlp.vim') " fuzzy finder
+  call dein#add('folke/tokyonight.nvim') " カラースキームプラグイン
+  call dein#add('sainnhe/everforest') " カラースキームプラグイン
+  call dein#add('shaunsingh/nord.nvim') " カラースキームプラグイン
+  call dein#add('tpope/vim-fugitive') " Gitプラグイン
   call dein#add('preservim/nerdcommenter') " コードのコメントとアンコメントを簡単に行う
   call dein#add('simeji/winresizer') " vimウインドウサイズ制御、Ctrl-Eでリサイズモード、hjklでウインドウサイズ変更
   call dein#add('dense-analysis/ale') " lint
   call dein#add('Yggdroot/indentLine') " インデントガイド
+  call dein#add('nvim-lua/plenary.nvim') " ファイル検索、文字列検索
+  call dein#add('nvim-telescope/telescope.nvim', { 'rev': '0.1.3' })
 
     " deinでプラグイン管理を終了します
   call dein#end()
-  
+
   " 現在のプラグイン状態を保存します
   call dein#save_state()
 endif
@@ -86,7 +91,7 @@ if dein#check_install()
 endif
 
 " カラースキームを設定します
-colorscheme iceberg
+"colorscheme iceberg
     
 " Vimが使用できる色の数を設定します
 set t_Co=256
@@ -110,13 +115,13 @@ set ignorecase smartcase
 inoremap jj <Esc>
 
 "keymap 定義
-nmap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 
-nmap <leader>ff :Files<CR>
-nmap <leader>fb :Buffers<CR>
+nnoremap <C-p> <cmd>Telescope find_files<cr>
+nnoremap <C-g> <cmd>Telescope live_grep<cr>
 
-nmap <leader>cc :NERDCommenterComment<CR>
-nmap <leader>cu :NERDCommenterUncomment<CR>
+nnoremap <leader>cc :NERDCommenterComment<CR>
+nnoremap <leader>cu :NERDCommenterUncomment<CR>
 
 let g:ale_fixers = {
     \   'javascript': ['prettier'],
@@ -134,4 +139,4 @@ let g:ale_fix_on_save = 1
 
 let g:indent_guides_enable_on_vim_startup = 1
 
-
+let g:ctrlp_custom_ignore = "node_modules\|DS_Store\|.git"

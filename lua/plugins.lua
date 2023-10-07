@@ -22,6 +22,7 @@ return require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'sainnhe/everforest'
 
+  -- ステータスライン
   use {
     "nvim-lualine/lualine.nvim",
     require = { "nvim-tree/nvim-web-devicons", opt = true }
