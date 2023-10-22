@@ -64,13 +64,15 @@ if dein#load_state('~/.cache/dein')
   call dein#add('folke/tokyonight.nvim') " カラースキームプラグイン
   call dein#add('sainnhe/everforest') " カラースキームプラグイン
   call dein#add('shaunsingh/nord.nvim') " カラースキームプラグイン
+  call dein#add('nanotech/jellybeans.vim') " カラースキームプラグイン
   call dein#add('tpope/vim-fugitive') " Gitプラグイン
+  call dein#add('airblade/vim-gitgutter') " Gitプラグイン
   call dein#add('preservim/nerdcommenter') " コードのコメントとアンコメントを簡単に行う
   call dein#add('simeji/winresizer') " vimウインドウサイズ制御、Ctrl-Eでリサイズモード、hjklでウインドウサイズ変更
   call dein#add('dense-analysis/ale') " lint
   call dein#add('Yggdroot/indentLine') " インデントガイド
   call dein#add('nvim-lua/plenary.nvim') " ファイル検索、文字列検索
-  call dein#add('nvim-telescope/telescope.nvim', { 'rev': '0.1.3' })
+  call dein#add('nvim-telescope/telescope.nvim', { 'rev': '0.1.3' }) " plenary.nvimを使ったファイル検索、文字列検索
 
     " deinでプラグイン管理を終了します
   call dein#end()
@@ -91,8 +93,9 @@ if dein#check_install()
 endif
 
 " カラースキームを設定します
-"colorscheme iceberg
-    
+colorscheme iceberg
+
+
 " Vimが使用できる色の数を設定します
 set t_Co=256
 
